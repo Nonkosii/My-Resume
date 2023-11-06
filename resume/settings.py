@@ -32,7 +32,7 @@ SECRET_KEY = 'b@t3l$%#&qdfod%dch9l===f%&!%uudx@7c$c@$-w_p^zdzq&p'
 DEBUG = 'RENDER' not in os.environ
 #os.environ.get("DEBUG", "False").lower() == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
