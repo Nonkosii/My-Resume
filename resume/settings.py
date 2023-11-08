@@ -24,14 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-
+# Development
+SECRET_KEY = 'b@t3l$%#&qdfod%dch9l===f%&!%uudx@7c$c@$-w_p^zdzq&p'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 #os.environ.get("DEBUG", "False").lower() == "True"
-
-DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['*']
 
