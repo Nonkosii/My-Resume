@@ -120,8 +120,6 @@ p {
 }
 
 a button {
-  position: fixed;
-  margin-top: 147px;
   margin-left: 100px;
   background-color: #4caf50; 
   border: none;
@@ -129,7 +127,6 @@ a button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
