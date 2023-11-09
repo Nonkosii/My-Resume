@@ -392,6 +392,9 @@ section:last-child {
   }
 }
 @media all and (min-width: 2400px) {
+  a button {
+    display: none;
+  }
   #headshot {
     width: 12.5%;
     float: left;
@@ -467,6 +470,9 @@ section:last-child {
     width: 95%;
     margin: 10px auto;
     min-width: 280px;
+  }
+  a button {
+    display: none;
   }
 
   /* #headshot {
@@ -557,6 +563,9 @@ section:last-child {
 }
 
 @media all and (max-width: 480px) {
+  a button {
+    display: none;
+  }
   .mainDetails {
     padding: 15px 15px;
   }
