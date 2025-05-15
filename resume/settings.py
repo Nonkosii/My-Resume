@@ -22,7 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+#SECRET_KEY = os.environ.get('SECRET_KEY')
+
+# Development Secret key
+SECRET_KEY = 'rvqzk#0=az#o8chl$0j$c%2pra(#a%l9*9==ywa-==2*i#dfk$'
 
 
 
@@ -128,10 +131,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #For Production
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #For development
-#STATIC_ROOT = '/static/' 
+STATIC_ROOT = '/static/' 
 
 
 STATICFILES_DIRS = [
