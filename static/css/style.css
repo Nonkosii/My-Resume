@@ -503,7 +503,7 @@ section:last-child {
   #name .container .text {
     position: relative;
     color: #0f3bb2;
-    margin-left: 20px;
+    margin-left: 25px;
     display: flex;
     font-size: 1.5em;
     font-family: "Rokkitt", Helvetica, Arial, sans-serif;
@@ -585,6 +585,7 @@ section:last-child {
   }
 
   #name h1 {
+    margin-left: -20px;
     line-height: 0.8em;
     margin-bottom: 4px;
   }

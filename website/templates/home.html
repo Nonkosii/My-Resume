@@ -32,7 +32,7 @@
 			<img src="{% static 'image/headshot.jpg' %}" alt=""/>
 		</div>
 			
-		<a href="{% static 'pdf/CV.pdf' %}" download><button>Download PDF</button></a>
+		<a href="{% static 'pdf/Sibongiseni_CV.pdf' %}" download><button>Download PDF</button></a>
 		
 		
 		<div id="name">
@@ -45,10 +45,6 @@
 				<div class="email-icon"><a href="mailto:paynexaba@gmail.com" target="_blank">
 					&#9993;</a>
 				</div>
-
-				<!-- <div><a href="http://sibongiseni-xaba.onrender.com" target="_blank">
-					<div id="headshot" class="quickFade" style="width: 20px;"><i class="material-icons">language</i></div></a>
-				</div> -->
 
 				<a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/sibongiseni-xaba-390991259/"></a>
 
@@ -69,23 +65,7 @@
 				</div>
 			</article>
 			<div class="clear"></div>
-		</section>		
-		<!-- <section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
-			<div class="sectionContent">
-				<article>
-					<h2>Software Developer at Mazars</h2>
-					<p class="subDetails">September 2023 - Present</p>
-					<p>Developing and Designing Website using Django, JavaScript, HTML5 and CSS3.
-						Working closer with Data Analyst team to develop Dashboard of dynamic data visualization using Power BI, Automation Scripts in Python and 
-						Data Pipeline Development: Building automated data pipelines for ETL (Extract, Transform, Load) processes, ensuring a consistent flow of data from source to destination.
-						</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>		 -->
+		</section>
 		<section>
 			<div class="sectionTitle">
 				<h1>Key Skills</h1>
@@ -140,7 +120,7 @@
 		
 		
 	</div>
-	<div class="footer">&copy; 2023 - Sibongiseni Xaba.</div>	
+	<div class="footer">&copy; <span id="year"></span> - Sibongiseni Xaba.</div>
 </div>
 
 <script>
@@ -158,6 +138,8 @@
 	textLoad();
 
 	setInterval(textLoad, 8000); // Repeat every 8 seconds (4 seconds for each title)
+
+	document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
